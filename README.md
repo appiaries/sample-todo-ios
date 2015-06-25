@@ -8,6 +8,10 @@ Or, they can use Twitter/Facebook account to login.
 Users can add/edit/delete todo tasks. Main view shows a weekly tasks list.  
 Tapping on the task to manage the detail about the task.  
 
+## Updates
+
+* [2015-06-23] Upgraded the _Appiaries SDK_ vesion from _**"Appiaries SDK v.1.4.0"**_ to _**"Appiaries SDK v.2.0.0"**_.
+
 ## Requirements
 
 It does not require you an Appiaries account if you just want to build and run the app.  
@@ -125,10 +129,10 @@ You may freely use, modify, or distribute the source codes provided.
 For further details, refer to the official documents on Appiaries.
 
 in English  
-http://docs.appiaries.com/?p=13862&lang=en
+http://docs.appiaries.com/?p=14850&lang=en
 
 in Japanese  
-http://docs.appiaries.com/?p=13771
+http://docs.appiaries.com/?p=14767
 
 Also, iOS version available on GitHub.  
 https://github.com/appiaries/sample-todo-android
