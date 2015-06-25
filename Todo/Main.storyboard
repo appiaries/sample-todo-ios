@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="rQh-Hz-M7f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="rQh-Hz-M7f">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Top View Controller-->
@@ -144,10 +144,10 @@
             </objects>
             <point key="canvasLocation" x="-420" y="73"/>
         </scene>
-        <!--Daily List View Controller-->
+        <!--Task List View Controller-->
         <scene sceneID="kbI-Hp-9PK">
             <objects>
-                <viewController id="qGq-dA-Na1" customClass="DailyListViewController" sceneMemberID="viewController">
+                <viewController id="qGq-dA-Na1" customClass="TaskListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxN-Dw-Q59">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -157,7 +157,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DailyCellIdentifier" id="jP7-E3-Nl7" customClass="DailyTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCellIdentifier" id="jP7-E3-Nl7" customClass="TaskListCell">
                                         <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jP7-E3-Nl7" id="3kR-bV-8B7">
@@ -188,9 +188,18 @@
                             <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" id="Ffz-CH-ICx">
                                 <rect key="frame" x="16" y="7" width="213" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="" label=""/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <attributedString key="userComments">
+                                <fragment content="xxxxx">
+                                    <attributes>
+                                        <font key="NSFont" metaFont="smallSystem"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
                         </barButtonItem>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="s70-yF-L3I">
                             <rect key="frame" x="235" y="11" width="22" height="22"/>
@@ -224,10 +233,10 @@
             </objects>
             <point key="canvasLocation" x="-995" y="790"/>
         </scene>
-        <!--Add Todo View Controller-->
+        <!--Task Input View Controller-->
         <scene sceneID="Rkk-9S-7Us">
             <objects>
-                <viewController storyboardIdentifier="AddTodoView" id="zbA-YY-mOX" customClass="AddTodoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddTodoView" id="zbA-YY-mOX" customClass="TaskInputViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fe4-PR-kG7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -304,10 +313,10 @@
             </objects>
             <point key="canvasLocation" x="-420" y="790"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="GHy-fI-EWu">
             <objects>
-                <viewController storyboardIdentifier="MenuView" id="Ff4-7q-11M" customClass="MenuViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuView" id="Ff4-7q-11M" customClass="SettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="68G-Mr-kIM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -328,10 +337,10 @@
             </objects>
             <point key="canvasLocation" x="-6" y="790"/>
         </scene>
-        <!--Account View Controller-->
+        <!--Account Setting View Controller-->
         <scene sceneID="ToR-w5-1WB">
             <objects>
-                <viewController storyboardIdentifier="AccountView" id="E22-GS-bzC" customClass="AccountViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountView" id="E22-GS-bzC" customClass="AccountSettingViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rfC-ui-w1m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -415,7 +424,7 @@
         <!--登録-->
         <scene sceneID="7OI-l6-mP1">
             <objects>
-                <viewController id="kvC-FG-ChS" customClass="RegisterViewController" sceneMemberID="viewController">
+                <viewController id="kvC-FG-ChS" customClass="SignUpViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Icd-Fv-MwQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -522,7 +531,7 @@
         <!--Navigation Controller-->
         <scene sceneID="SKa-g3-BuN">
             <objects>
-                <navigationController storyboardIdentifier="NavigationControllerDailyList" automaticallyAdjustsScrollViewInsets="NO" id="6br-YG-V3G" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationControllerTaskList" automaticallyAdjustsScrollViewInsets="NO" id="6br-YG-V3G" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tl0-t5-mau">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
